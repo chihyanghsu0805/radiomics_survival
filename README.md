@@ -1,5 +1,5 @@
 # Radiomics Survival Analysis
-This repository performs survival analysis using clinical and radiomics features.
+This repository performs survival analysis using clinical and radiomics features. \
 It utilizes two commonly used packages for computing radiomic features and survival model, pyradiomics and pysurvival.
 
 ## Pyradiomics
@@ -32,3 +32,6 @@ We used LASSO with bootstrap and determined a cutoff for predictiveness.
 
 ## Outputs
 The final output is a csv file with each row as a model and the columns as its model performance.
+
+## Log
+02/25/2020 Uploaded
