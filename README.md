@@ -22,10 +22,10 @@ Performance of a survival model is usually characterized by C-index and/or Integ
 These are assumed to be categorical and converted to one-hot.
 
 ## Radiomics
-Radiomics converts unstructured data (images) into structured data (case x features).
-However, the stability/reproducibilty is not well studied or poor due to the varying hardware and scanning parameters.
-The stability is established by Test-Retest experiments with imaging within two weeks.
-And this repository filters out radiomic features outside given p-value range.
+Radiomics converts unstructured data (images) into structured data (case x features). They are pre-computed using pyradiomics in batch mode due to speed. \
+The stability/reproducibilty is not well studied or poor due to the varying hardware and scanning parameters.
+We established stability by Test-Retest experiments with imaging within two weeks.
+Unstable radiomic features outside given p-value range is discarded. \
 
 Additionally, features can be filtered with other feature selection methods.
 We used LASSO with bootstrap and determined a cutoff for predictiveness.
